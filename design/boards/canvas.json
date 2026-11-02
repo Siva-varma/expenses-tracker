@@ -1,0 +1,213 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "Add.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "3 Add transaction",
+      "w": 390,
+      "x": 1920,
+      "y": 0
+    },
+    "Budgets.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "6 Budgets",
+      "w": 390,
+      "x": 3330,
+      "y": 0
+    },
+    "Home.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "2 Home",
+      "w": 390,
+      "x": 1450,
+      "y": 0
+    },
+    "Import.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "5 Import statement",
+      "w": 390,
+      "x": 2860,
+      "y": 0
+    },
+    "Main.dc.html": {
+      "h": 899,
+      "title": "Visual foundations",
+      "w": 725,
+      "x": 0,
+      "y": 0
+    },
+    "Report.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "7 Monthly report",
+      "w": 390,
+      "x": 3800,
+      "y": 0
+    },
+    "SignIn.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "1 Sign in",
+      "w": 390,
+      "x": 980,
+      "y": 0
+    },
+    "Transactions.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "title": "4 Transactions",
+      "w": 390,
+      "x": 2390,
+      "y": 0
+    },
+    "WebAdd.dc.html": {
+      "h": 860,
+      "is_interactive": true,
+      "title": "11 Web: Add transaction",
+      "w": 1280,
+      "x": 0,
+      "y": 2300
+    },
+    "WebBudgets.dc.html": {
+      "h": 860,
+      "is_interactive": true,
+      "title": "13 Web: Budgets",
+      "w": 1280,
+      "x": 2720,
+      "y": 2300
+    },
+    "WebHome.dc.html": {
+      "h": 860,
+      "is_interactive": true,
+      "title": "9 Web: Home",
+      "w": 1280,
+      "x": 1440,
+      "y": 1300
+    },
+    "WebImport.dc.html": {
+      "h": 860,
+      "is_interactive": true,
+      "title": "12 Web: Import statement",
+      "w": 1280,
+      "x": 1360,
+      "y": 2300
+    },
+    "WebReport.dc.html": {
+      "h": 860,
+      "is_interactive": true,
+      "title": "14 Web: Monthly report",
+      "w": 1280,
+      "x": 0,
+      "y": 3300
+    },
+    "WebSignIn.dc.html": {
+      "h": 860,
+      "is_interactive": true,
+      "title": "8 Web: Sign in",
+      "w": 1280,
+      "x": 0,
+      "y": 1300
+    },
+    "WebTransactions.dc.html": {
+      "h": 860,
+      "is_interactive": true,
+      "title": "10 Web: Transactions",
+      "w": 1280,
+      "x": 2720,
+      "y": 1300
+    },
+    "Landing.dc.html": {
+      "x": 0,
+      "y": 4420,
+      "w": 1440,
+      "h": 10208,
+      "title": "15 Landing page: desktop",
+      "is_interactive": true
+    },
+    "LandingMobile.dc.html": {
+      "x": 1560,
+      "y": 4420,
+      "w": 390,
+      "h": 11933,
+      "title": "16 Landing page: phone",
+      "is_interactive": true
+    },
+    "ShareCard.dc.html": {
+      "x": 2080,
+      "y": 4420,
+      "w": 1200,
+      "h": 630,
+      "title": "17 Share card (link preview)",
+      "is_interactive": false
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-11-01T18:10:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "t-foundations": {
+      "kind": "title1",
+      "maxW": 900,
+      "text": "Foundations",
+      "w": 240,
+      "x": 0,
+      "y": -260
+    },
+    "t-screens": {
+      "kind": "title1",
+      "maxW": 3210,
+      "text": "Round 1: mobile screens",
+      "w": 240,
+      "x": 980,
+      "y": -260
+    },
+    "t-web": {
+      "kind": "title1",
+      "maxW": 4000,
+      "text": "Round 2: web screens (desktop, 1280 wide)",
+      "w": 240,
+      "x": 0,
+      "y": 1240
+    },
+    "t-landing": {
+      "x": 0,
+      "y": 4360,
+      "text": "Round 3: landing page",
+      "kind": "title1",
+      "maxW": 2000,
+      "w": 240
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "SignIn.dc.html",
+    "Home.dc.html",
+    "Add.dc.html",
+    "Transactions.dc.html",
+    "Import.dc.html",
+    "Budgets.dc.html",
+    "Report.dc.html",
+    "WebSignIn.dc.html",
+    "WebHome.dc.html",
+    "WebTransactions.dc.html",
+    "WebAdd.dc.html",
+    "WebImport.dc.html",
+    "WebBudgets.dc.html",
+    "WebReport.dc.html",
+    "Landing.dc.html",
+    "LandingMobile.dc.html",
+    "ShareCard.dc.html"
+  ],
+  "pages": [],
+  "title": "Expenses Tracker - Design"
+}

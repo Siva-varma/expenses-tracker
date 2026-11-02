@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Budgets</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:inherit;text-decoration:none}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; display: flex; flex-direction: column; overflow: hidden; background: #FFFFFF; color: #111111; font-family: 'Inter', system-ui, -apple-system, sans-serif">
+
+<header style="flex: none; padding: 16px 20px 8px; display: flex; align-items: center; justify-content: space-between">
+<div>
+<div style="font-size: 13px; line-height: 18px; color: #5C5C5C">November 2026</div>
+<h1 style="margin: 0; font-size: 24px; line-height: 30px; font-weight: 700">Budgets</h1>
+</div>
+<button type="button" style="height: 44px; box-sizing: border-box; padding: 0 18px; border: 1.5px solid #111111; border-radius: 22px; background: #FFFFFF; color: #111111; font-family: 'Inter', system-ui, sans-serif; font-size: 15px; font-weight: 600">Edit budgets</button>
+</header>
+
+<main style="flex: 1; min-height: 0; padding: 4px 20px 0; display: flex; flex-direction: column; gap: 10px; overflow: hidden">
+
+<section aria-label="Total budget" style="background: #FFFFFF; border: 1px solid #E6E6E6; border-radius: 16px; padding: 12px 16px">
+<div style="font-size: 14px; line-height: 20px; color: #5C5C5C">Spent against all budgets</div>
+<div style="display: flex; align-items: baseline; gap: 6px"><span style="font-size: 28px; line-height: 36px; font-weight: 700; font-variant-numeric: tabular-nums">₹37,280</span><span style="font-size: 14px; line-height: 20px; color: #5C5C5C; font-variant-numeric: tabular-nums">of ₹42,000</span></div>
+<div role="img" aria-label="89 percent of the total budget used" style="margin-top: 10px; height: 8px; border-radius: 4px; background: #E6E6E6"><div style="width: 89%; height: 8px; border-radius: 4px; background: #1B7F4B"></div></div>
+<div style="margin-top: 8px; font-size: 13px; line-height: 18px; color: #5C5C5C; font-variant-numeric: tabular-nums">₹4,720 left across all categories</div>
+</section>
+
+<section aria-label="Budget by category" style="background: #FFFFFF; border: 1px solid #E6E6E6; border-radius: 16px; padding: 0 16px">
+
+<div style="padding: 10px 0; border-bottom: 1px solid #E6E6E6">
+<div style="display: flex; align-items: center; justify-content: space-between">
+<div style="display: flex; align-items: center; gap: 10px"><span style="width: 28px; height: 28px; border-radius: 14px; background: #E6EDFC; display: inline-flex; align-items: center; justify-content: center; flex: none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2457D6" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span><div style="font-size: 16px; line-height: 22px; font-weight: 600">Rent</div></div>
+<span style="display: inline-flex; align-items: center; gap: 4px; padding: 3px 10px 3px 8px; border-radius: 999px; background: #E1F3E8; color: #1B7F4B; font-size: 13px; line-height: 18px; font-weight: 600"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>On track</span>
+</div>
+<div role="img" aria-label="Rent budget used: 100 percent" style="margin-top: 8px; height: 8px; border-radius: 4px; background: #E6E6E6"><div style="width: 100%; height: 8px; border-radius: 4px; background: #1B7F4B"></div></div>
+<div style="margin-top: 6px; font-size: 13px; line-height: 18px; color: #5C5C5C; font-variant-numeric: tabular-nums">₹15,000 of ₹15,000</div>
+</div>
+
+<div style="padding: 10px 0; border-bottom: 1px solid #E6E6E6">
+<div style="display: flex; align-items: center; justify-content: space-between">
+<div style="display: flex; align-items: center; gap: 10px"><span style="width: 28px; height: 28px; border-radius: 14px; background: #FCEBDA; display: inline-flex; align-items: center; justify-content: center; flex: none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B85A0B" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg></span><div style="font-size: 16px; line-height: 22px; font-weight: 600">Food</div></div>
+<span style="display: inline-flex; align-items: center; gap: 4px; padding: 3px 10px 3px 8px; border-radius: 999px; background: #E1F3E8; color: #1B7F4B; font-size: 13px; line-height: 18px; font-weight: 600"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>On track</span>
+</div>
+<div role="img" aria-label="Food budget used: 82 percent" style="margin-top: 8px; height: 8px; border-radius: 4px; background: #E6E6E6"><div style="width: 82%; height: 8px; border-radius: 4px; background: #1B7F4B"></div></div>
+<div style="margin-top: 6px; font-size: 13px; line-height: 18px; color: #5C5C5C; font-variant-numeric: tabular-nums">₹8,200 of ₹10,000</div>
+</div>
+
+<div style="padding: 10px 0; border-bottom: 1px solid #E6E6E6">
+<div style="display: flex; align-items: center; justify-content: space-between">
+<div style="display: flex; align-items: center; gap: 10px"><span style="width: 28px; height: 28px; border-radius: 14px; background: #DDF2F5; display: inline-flex; align-items: center; justify-content: center; flex: none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0B7684" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6v6"/><path d="M15 6v6"/><path d="M2 12h19.6"/><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><circle cx="16" cy="18" r="2"/></svg></span><div style="font-size: 16px; line-height: 22px; font-weight: 600">Travel</div></div>
+<span style="display: inline-flex; align-items: center; gap: 4px; padding: 3px 10px 3px 8px; border-radius: 999px; background: #FBE9E4; color: #9A2A12; font-size: 13px; line-height: 18px; font-weight: 600"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 8v5M12 16h.01"/></svg>Over by ₹600</span>
+</div>
+<div role="img" aria-label="Travel budget used: more than 100 percent" style="margin-top: 8px; height: 8px; border-radius: 4px; background: #E6E6E6"><div style="width: 100%; height: 8px; border-radius: 4px; background: #B3361A"></div></div>
+<div style="margin-top: 6px; font-size: 13px; line-height: 18px; color: #5C5C5C; font-variant-numeric: tabular-nums">₹5,100 of ₹4,500</div>
+</div>
+
+<div style="padding: 10px 0; border-bottom: 1px solid #E6E6E6">
+<div style="display: flex; align-items: center; justify-content: space-between">
+<div style="display: flex; align-items: center; gap: 10px"><span style="width: 28px; height: 28px; border-radius: 14px; background: #F1E5FA; display: inline-flex; align-items: center; justify-content: center; flex: none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7A2FB5" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 10a4 4 0 0 1-8 0"/><path d="M3.103 6.034h17.794"/><path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"/></svg></span><div style="font-size: 16px; line-height: 22px; font-weight: 600">Shopping</div></div>
+<span style="display: inline-flex; align-items: center; gap: 4px; padding: 3px 10px 3px 8px; border-radius: 999px; background: #FBF0DC; color: #7A4A00; font-size: 13px; line-height: 18px; font-weight: 600"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 8v5M12 16h.01"/></svg>Almost at limit</span>
+</div>
+<div role="img" aria-label="Shopping budget used: 96 percent" style="margin-top: 8px; height: 8px; border-radius: 4px; background: #E6E6E6"><div style="width: 96%; height: 8px; border-radius: 4px; background: #B8700A"></div></div>
+<div style="margin-top: 6px; font-size: 13px; line-height: 18px; color: #5C5C5C; font-variant-numeric: tabular-nums">₹4,800 of ₹5,000</div>
+</div>
+
+<div style="padding: 10px 0; border-bottom: 1px solid #E6E6E6">
+<div style="display: flex; align-items: center; justify-content: space-between">
+<div style="display: flex; align-items: center; gap: 10px"><span style="width: 28px; height: 28px; border-radius: 14px; background: #FAE4EE; display: inline-flex; align-items: center; justify-content: center; flex: none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A82D66" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M14 8H8"/><path d="M16 12H8"/><path d="M13 16H8"/></svg></span><div style="font-size: 16px; line-height: 22px; font-weight: 600">Bills</div></div>
+<span style="display: inline-flex; align-items: center; gap: 4px; padding: 3px 10px 3px 8px; border-radius: 999px; background: #E1F3E8; color: #1B7F4B; font-size: 13px; line-height: 18px; font-weight: 600"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>On track</span>
+</div>
+<div role="img" aria-label="Bills budget used: 58 percent" style="margin-top: 8px; height: 8px; border-radius: 4px; background: #E6E6E6"><div style="width: 58%; height: 8px; border-radius: 4px; background: #1B7F4B"></div></div>
+<div style="margin-top: 6px; font-size: 13px; line-height: 18px; color: #5C5C5C; font-variant-numeric: tabular-nums">₹3,480 of ₹6,000</div>
+</div>
+
+<div style="padding: 10px 0">
+<div style="display: flex; align-items: center; justify-content: space-between">
+<div style="display: flex; align-items: center; gap: 10px"><span style="width: 28px; height: 28px; border-radius: 14px; background: #ECEFF3; display: inline-flex; align-items: center; justify-content: center; flex: none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4A5568" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M17 12h.01"/><path d="M12 12h.01"/><path d="M7 12h.01"/></svg></span><div style="font-size: 16px; line-height: 22px; font-weight: 600">Others</div></div>
+<span style="display: inline-flex; align-items: center; gap: 4px; padding: 3px 10px 3px 8px; border-radius: 999px; background: #E1F3E8; color: #1B7F4B; font-size: 13px; line-height: 18px; font-weight: 600"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>On track</span>
+</div>
+<div role="img" aria-label="Others budget used: 47 percent" style="margin-top: 8px; height: 8px; border-radius: 4px; background: #E6E6E6"><div style="width: 47%; height: 8px; border-radius: 4px; background: #1B7F4B"></div></div>
+<div style="margin-top: 6px; font-size: 13px; line-height: 18px; color: #5C5C5C; font-variant-numeric: tabular-nums">₹700 of ₹1,500</div>
+</div>
+
+</section>
+
+</main>
+
+<nav aria-label="Main" style="flex: none; position: relative; height: 84px; box-sizing: border-box; background: #FFFFFF; border-top: 1px solid #E6E6E6; display: flex; align-items: flex-start; justify-content: space-around; padding: 10px 8px 0">
+<a href="Home.dc.html" style="width: 72px; min-height: 52px; display: flex; flex-direction: column; align-items: center; gap: 2px; color: #5C5C5C; font-size: 12px; line-height: 16px; font-weight: 500"><span style="width: 56px; height: 28px; border-radius: 14px; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span>Home</a>
+<a href="Transactions.dc.html" style="width: 72px; min-height: 52px; display: flex; flex-direction: column; align-items: center; gap: 2px; color: #5C5C5C; font-size: 12px; line-height: 16px; font-weight: 500"><span style="width: 56px; height: 28px; border-radius: 14px; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h.01"/><path d="M3 18h.01"/><path d="M3 6h.01"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M8 6h13"/></svg></span>Transactions</a>
+<a href="Add.dc.html" aria-label="Add transaction" style="width: 56px; height: 56px; margin-top: -18px; border-radius: 28px; background: #111111; color: #FFFFFF; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25)"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></a>
+<a href="Budgets.dc.html" aria-current="page" style="width: 72px; min-height: 52px; display: flex; flex-direction: column; align-items: center; gap: 2px; color: #111111; font-size: 12px; line-height: 16px; font-weight: 700"><span style="width: 56px; height: 28px; border-radius: 14px; background: #F0F0F0; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></svg></span>Budgets</a>
+<a href="Report.dc.html" style="width: 72px; min-height: 52px; display: flex; flex-direction: column; align-items: center; gap: 2px; color: #5C5C5C; font-size: 12px; line-height: 16px; font-weight: 500"><span style="width: 56px; height: 28px; border-radius: 14px; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg></span>Reports</a>
+</nav>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

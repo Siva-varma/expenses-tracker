@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Add transaction</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:inherit;text-decoration:none}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; display: flex; flex-direction: column; overflow: hidden; background: #FFFFFF; color: #111111; font-family: 'Inter', system-ui, -apple-system, sans-serif">
+
+<header style="flex: none; padding: 16px 12px 8px; display: flex; align-items: center; gap: 4px">
+<a href="Home.dc.html" aria-label="Back to Home" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; color: #111111"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg></a>
+<h1 style="margin: 0; font-size: 20px; line-height: 26px; font-weight: 700">Add transaction</h1>
+</header>
+
+<main style="flex: 1; min-height: 0; padding: 8px 20px 0; display: flex; flex-direction: column; gap: 16px; overflow: hidden">
+
+<div role="group" aria-label="Type of transaction" style="display: flex; padding: 4px; border-radius: 14px; background: #EFEFEF; gap: 4px">
+<button type="button" aria-pressed="true" style="flex: 1; height: 44px; border: none; border-radius: 10px; background: #2457D6; color: #FFFFFF; font-family: 'Inter', system-ui, sans-serif; font-size: 16px; font-weight: 600">Spent</button>
+<button type="button" aria-pressed="false" style="flex: 1; height: 44px; border: none; border-radius: 10px; background: transparent; color: #111111; font-family: 'Inter', system-ui, sans-serif; font-size: 16px; font-weight: 500">Received</button>
+</div>
+
+<div style="background: #FFFFFF; border: 1px solid #E6E6E6; border-radius: 16px; padding: 14px 16px 12px">
+<label for="amount" style="display: block; font-size: 14px; line-height: 20px; font-weight: 500; color: #5C5C5C">Amount</label>
+<div style="display: flex; align-items: center; gap: 8px">
+<span aria-hidden="true" style="font-size: 36px; line-height: 52px; font-weight: 600; color: #5C5C5C">₹</span>
+<input id="amount" type="text" inputmode="numeric" value="450" style="flex: 1; min-width: 0; border: none; outline: none; background: transparent; padding: 0; font-family: 'Inter', system-ui, sans-serif; font-size: 44px; line-height: 52px; font-weight: 700; color: #111111; font-variant-numeric: tabular-nums">
+</div>
+</div>
+
+<div>
+<div id="cat-label" style="font-size: 14px; line-height: 20px; font-weight: 500; color: #5C5C5C; margin-bottom: 8px">Category</div>
+<div role="group" aria-labelledby="cat-label" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+<button type="button" aria-pressed="true" style="height: 72px; box-sizing: border-box; padding: 0; border: 2px solid #2457D6; border-radius: 14px; background: #E6EDFC; color: #2457D6; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; font-family: 'Inter', system-ui, sans-serif; font-size: 14px; font-weight: 600"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>Food</button>
+<button type="button" aria-pressed="false" style="height: 72px; box-sizing: border-box; padding: 0; border: 1px solid #E6E6E6; border-radius: 14px; background: #FFFFFF; color: #111111; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; font-family: 'Inter', system-ui, sans-serif; font-size: 14px; font-weight: 500"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2457D6" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Rent</button>
+<button type="button" aria-pressed="false" style="height: 72px; box-sizing: border-box; padding: 0; border: 1px solid #E6E6E6; border-radius: 14px; background: #FFFFFF; color: #111111; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; font-family: 'Inter', system-ui, sans-serif; font-size: 14px; font-weight: 500"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B7684" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6v6"/><path d="M15 6v6"/><path d="M2 12h19.6"/><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><circle cx="16" cy="18" r="2"/></svg>Travel</button>
+<button type="button" aria-pressed="false" style="height: 72px; box-sizing: border-box; padding: 0; border: 1px solid #E6E6E6; border-radius: 14px; background: #FFFFFF; color: #111111; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; font-family: 'Inter', system-ui, sans-serif; font-size: 14px; font-weight: 500"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7A2FB5" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 10a4 4 0 0 1-8 0"/><path d="M3.103 6.034h17.794"/><path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"/></svg>Shopping</button>
+<button type="button" aria-pressed="false" style="height: 72px; box-sizing: border-box; padding: 0; border: 1px solid #E6E6E6; border-radius: 14px; background: #FFFFFF; color: #111111; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; font-family: 'Inter', system-ui, sans-serif; font-size: 14px; font-weight: 500"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#A82D66" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M14 8H8"/><path d="M16 12H8"/><path d="M13 16H8"/></svg>Bills</button>
+<button type="button" aria-pressed="false" style="height: 72px; box-sizing: border-box; padding: 0; border: 1px solid #E6E6E6; border-radius: 14px; background: #FFFFFF; color: #111111; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; font-family: 'Inter', system-ui, sans-serif; font-size: 14px; font-weight: 500"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4A5568" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M17 12h.01"/><path d="M12 12h.01"/><path d="M7 12h.01"/></svg>Others</button>
+</div>
+</div>
+
+<div style="display: flex; gap: 12px">
+<div style="flex: 1; min-width: 0">
+<div id="from-label" style="font-size: 14px; line-height: 20px; font-weight: 500; color: #5C5C5C; margin-bottom: 6px">Paid from</div>
+<button type="button" aria-labelledby="from-label" style="width: 100%; height: 52px; box-sizing: border-box; padding: 0 14px; border: 1px solid #CFCFCF; border-radius: 12px; background: #FFFFFF; color: #111111; display: flex; align-items: center; justify-content: space-between; font-family: 'Inter', system-ui, sans-serif; font-size: 16px; font-weight: 500">Cash<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5C5C5C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+</div>
+<div style="flex: 1; min-width: 0">
+<div id="date-label" style="font-size: 14px; line-height: 20px; font-weight: 500; color: #5C5C5C; margin-bottom: 6px">Date</div>
+<button type="button" aria-labelledby="date-label" style="width: 100%; height: 52px; box-sizing: border-box; padding: 0 14px; border: 1px solid #CFCFCF; border-radius: 12px; background: #FFFFFF; color: #111111; display: flex; align-items: center; justify-content: space-between; font-family: 'Inter', system-ui, sans-serif; font-size: 16px; font-weight: 500">Today<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5C5C5C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5.5" width="16" height="14" rx="2"/><path d="M4 10h16M8.5 3.5v4M15.5 3.5v4"/></svg></button>
+</div>
+</div>
+
+<div>
+<label for="note" style="display: block; font-size: 14px; line-height: 20px; font-weight: 500; color: #5C5C5C; margin-bottom: 6px">Note (optional)</label>
+<input id="note" type="text" placeholder="For example, lunch with team" style="width: 100%; height: 52px; box-sizing: border-box; padding: 0 14px; border-radius: 12px; border: 1px solid #CFCFCF; background: #FFFFFF; font-family: 'Inter', system-ui, sans-serif; font-size: 16px; color: #111111">
+</div>
+
+</main>
+
+<footer style="flex: none; padding: 12px 20px 28px">
+<a href="Home.dc.html" style="height: 52px; border-radius: 14px; background: #111111; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 600">Save transaction</a>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Import statement</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:inherit;text-decoration:none}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; display: flex; flex-direction: column; overflow: hidden; background: #FFFFFF; color: #111111; font-family: 'Inter', system-ui, -apple-system, sans-serif">
+
+<header style="flex: none; padding: 16px 12px 8px; display: flex; align-items: center; gap: 4px">
+<a href="Transactions.dc.html" aria-label="Back to Transactions" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; color: #111111"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg></a>
+<h1 style="margin: 0; font-size: 20px; line-height: 26px; font-weight: 700">Import statement</h1>
+</header>
+
+<main style="flex: 1; min-height: 0; padding: 8px 20px 0; display: flex; flex-direction: column; gap: 20px; overflow: hidden">
+
+<p style="margin: 0; font-size: 16px; line-height: 24px; color: #5C5C5C">Download your statement from your bank, then add it here. We read it once and fill in your transactions for you.</p>
+
+<section aria-labelledby="bank-label">
+<h2 id="bank-label" style="margin: 0 0 8px; font-size: 14px; line-height: 20px; font-weight: 500; color: #5C5C5C">1. Choose your bank</h2>
+<div role="group" aria-labelledby="bank-label" style="display: flex; flex-wrap: wrap; gap: 8px">
+<button type="button" aria-pressed="true" style="height: 44px; padding: 0 16px; border: 2px solid #2457D6; border-radius: 22px; background: #E6EDFC; color: #2457D6; display: flex; align-items: center; gap: 6px; font-family: 'Inter', system-ui, sans-serif; font-size: 15px; font-weight: 600"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>HDFC Bank</button>
+<button type="button" aria-pressed="false" style="height: 44px; box-sizing: border-box; padding: 0 16px; border: 1px solid #CFCFCF; border-radius: 22px; background: #FFFFFF; color: #111111; font-family: 'Inter', system-ui, sans-serif; font-size: 15px; font-weight: 500">SBI</button>
+<button type="button" aria-pressed="false" style="height: 44px; box-sizing: border-box; padding: 0 16px; border: 1px solid #CFCFCF; border-radius: 22px; background: #FFFFFF; color: #111111; font-family: 'Inter', system-ui, sans-serif; font-size: 15px; font-weight: 500">ICICI Bank</button>
+<button type="button" aria-pressed="false" style="height: 44px; box-sizing: border-box; padding: 0 16px; border: 1px solid #CFCFCF; border-radius: 22px; background: #FFFFFF; color: #111111; font-family: 'Inter', system-ui, sans-serif; font-size: 15px; font-weight: 500">Axis Bank</button>
+<button type="button" aria-pressed="false" style="height: 44px; box-sizing: border-box; padding: 0 16px; border: 1px solid #CFCFCF; border-radius: 22px; background: #FFFFFF; color: #111111; font-family: 'Inter', system-ui, sans-serif; font-size: 15px; font-weight: 500">Kotak</button>
+</div>
+</section>
+
+<section aria-labelledby="file-label">
+<h2 id="file-label" style="margin: 0 0 8px; font-size: 14px; line-height: 20px; font-weight: 500; color: #5C5C5C">2. Add the statement file</h2>
+<button type="button" style="width: 100%; box-sizing: border-box; padding: 24px 16px; border: 2px dashed #8A8A8A; border-radius: 16px; background: #FFFFFF; color: #111111; display: flex; flex-direction: column; align-items: center; gap: 8px; font-family: 'Inter', system-ui, sans-serif">
+<span style="width: 48px; height: 48px; border-radius: 24px; background: #F0F0F0; color: #111111; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 16V5M7.5 9.5 12 5l4.5 4.5M5 19h14"/></svg></span>
+<span style="font-size: 16px; line-height: 22px; font-weight: 600">Choose a file</span>
+<span style="font-size: 13px; line-height: 18px; color: #5C5C5C">CSV or Excel file, up to 5 MB</span>
+</button>
+</section>
+
+<section aria-label="How to get the file" style="background: #FFFFFF; border: 1px solid #E6E6E6; border-radius: 16px; padding: 14px 16px">
+<div style="font-size: 16px; line-height: 22px; font-weight: 600">Where do I find it?</div>
+<p style="margin: 4px 0 0; font-size: 14px; line-height: 20px; color: #5C5C5C">Open your bank's website or app, go to Account statement, pick the dates, and download as CSV or Excel.</p>
+</section>
+
+<div style="display: flex; align-items: flex-start; gap: 10px">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+<p style="margin: 0; font-size: 13px; line-height: 18px; color: #5C5C5C">We never ask for your bank password. You can review every transaction before it is saved.</p>
+</div>
+
+</main>
+
+<footer style="flex: none; padding: 12px 20px 28px">
+<a href="Transactions.dc.html" style="height: 52px; border-radius: 14px; background: #111111; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 600">Review transactions</a>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

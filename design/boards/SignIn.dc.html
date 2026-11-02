@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sign in</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:inherit;text-decoration:none}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; display: flex; flex-direction: column; overflow: hidden; background: #FFFFFF; color: #111111; font-family: 'Inter', system-ui, -apple-system, sans-serif; padding: 24px 20px 32px">
+
+<main style="flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: center; gap: 40px">
+
+<div style="display: flex; flex-direction: column; gap: 16px">
+<div style="width: 64px; height: 64px; border-radius: 18px; background: #111111; display: flex; align-items: center; justify-content: center"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 19v-5M12 19V9M18 19V5"/></svg></div>
+<h1 style="margin: 0; font-size: 32px; line-height: 38px; font-weight: 700">Expenses Tracker</h1>
+<p style="margin: 0; font-size: 18px; line-height: 26px; color: #5C5C5C; max-width: 300px">See where your money goes each month, and take control of it.</p>
+</div>
+
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 20px">
+<li style="display: flex; align-items: center; gap: 14px">
+<div style="width: 44px; height: 44px; border-radius: 22px; background: #F0F0F0; color: #111111; display: flex; align-items: center; justify-content: center; flex: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></div>
+<div><div style="font-size: 16px; line-height: 22px; font-weight: 600">Easy to add</div><div style="font-size: 14px; line-height: 20px; color: #5C5C5C">Type an expense, or upload a bank statement.</div></div>
+</li>
+<li style="display: flex; align-items: center; gap: 14px">
+<div style="width: 44px; height: 44px; border-radius: 22px; background: #F0F0F0; color: #111111; display: flex; align-items: center; justify-content: center; flex: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg></div>
+<div><div style="font-size: 16px; line-height: 22px; font-weight: 600">A clear monthly report</div><div style="font-size: 14px; line-height: 20px; color: #5C5C5C">Know what you spent most on, and what changed.</div></div>
+</li>
+<li style="display: flex; align-items: center; gap: 14px">
+<div style="width: 44px; height: 44px; border-radius: 22px; background: #F0F0F0; color: #111111; display: flex; align-items: center; justify-content: center; flex: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+<div><div style="font-size: 16px; line-height: 22px; font-weight: 600">Private by default</div><div style="font-size: 14px; line-height: 20px; color: #5C5C5C">We never ask for your bank password.</div></div>
+</li>
+</ul>
+
+</main>
+
+<footer style="flex: none; display: flex; flex-direction: column; gap: 16px">
+<a href="Home.dc.html" style="height: 52px; border-radius: 14px; background: #111111; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 600">Continue with Google</a>
+<p style="margin: 0; text-align: center; font-size: 13px; line-height: 18px; color: #5C5C5C">By continuing, you agree to the <a href="#" style="color: #111111; text-decoration: underline">Terms</a> and <a href="#" style="color: #111111; text-decoration: underline">Privacy Policy</a>.</p>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
